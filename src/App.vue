@@ -4,8 +4,6 @@ import TContent from '@/components/TContent.vue';
 </script>
 
 <template>
-	<THeader />
-	<TContent />
 </template>
 
 <style scoped>
