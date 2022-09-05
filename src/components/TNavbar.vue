@@ -5,7 +5,7 @@
                 <a href="#home" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-                <a href="#services" class="nav__link">My Services</a>
+                <a href="#services-sect" class="nav__link">My Services</a>
             </li>
             <li class="nav__item">
                 <a href="#about" class="nav__link">About me</a>
