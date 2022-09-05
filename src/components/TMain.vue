@@ -1,7 +1,11 @@
 <template>
-    <main></main>
+    <main>
+        <TIntro />
+    </main>
 </template>
 
-<script setup></script>
+<script setup>
+import TIntro from "./TIntro.vue";
+</script>
 
 <style lang="scss" scoped></style>
