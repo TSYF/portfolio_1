@@ -1,8 +1,13 @@
+/* Box Sizing */
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
+
+/* Variables */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -29,3 +34,21 @@
         --fs-body: 1.125rem;
     }
 }
+
+
+/* General Styles */
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
