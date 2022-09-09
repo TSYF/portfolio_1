@@ -53,6 +53,10 @@ img {
 }
 
 
+strong {
+    font-weight: var(--fw-bold);
+}
+
 /* Typography */
 
 
@@ -64,3 +68,29 @@ img {
 h1 { @extend %h; font-size: var(--fs-h1); }
 h2 { @extend %h; font-size: var(--fs-h2); }
 h3 { @extend %h; font-size: var(--fs-h3); }
+
+.section {
+
+    &__title {
+        margin-bottom: .25em;
+
+        &--intro {
+            font-weight: var(--fw-regular);
+
+            strong {
+                display: block;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-size: var(--fs-h3);
+
+        &--intro,
+        &--about {
+            background-color: var(--color-accent);
+            font-family: var(--ff-secondary);
+        }
+    }
+}
