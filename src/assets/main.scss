@@ -47,6 +47,10 @@ body {
     line-height: 1.6;
 }
 
+section {
+    padding: 5em 1em;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -61,7 +65,7 @@ strong {
 
 
 %h {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -86,11 +90,15 @@ h3 { @extend %h; font-size: var(--fs-h3); }
     &__subtitle {
         margin: 0;
         font-size: var(--fs-h3);
-
+        
         &--intro,
         &--about {
             background-color: var(--color-accent);
             font-family: var(--ff-secondary);
+            margin-bottom: .7em;
         }
     }
 }
+
+/* Header */
+nav { display: none; }
