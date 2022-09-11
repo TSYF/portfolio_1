@@ -9,7 +9,7 @@
             </p>
         </header>
         <img
-            src="@/assets/tomas-foto-1.jpg"
+            src="@/assets/img/tomas-dev_1.jpeg"
             alt="a picture of Tomas Yañez smiling"
         />
     </section>
