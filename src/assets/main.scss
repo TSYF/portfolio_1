@@ -87,6 +87,21 @@ h3 { @extend %h; font-size: var(--fs-h3); }
                 display: block;
             }
         }
+
+        &--services {
+            color: var(--color-accent);
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 25%;
+                margin: 0.5em auto 1em;
+                background: var(--color-light);
+                opacity: .25;
+            }
+        }
     }
 
     &__subtitle {
@@ -145,5 +160,28 @@ nav { display: none; }
                 left: -15em;
                 width: calc(100% + 15em);
             }
+    }
+}
+
+/* Services section */
+.services-sect {
+    background-color: var(--color-dark);
+    background-image: url(@img/services-bg.png);
+    background-size: cover;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 2em;
     }
 }
