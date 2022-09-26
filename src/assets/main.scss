@@ -63,6 +63,30 @@ strong {
     font-weight: var(--fw-bold);
 }
 
+:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: scale 200ms ease-in-out, outline 170ms ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
 /* Typography */
 
 
@@ -172,16 +196,22 @@ nav { display: none; }
     text-align: center;
 }
 
-.service {
-    max-width: 500px;
-    margin: 0 auto;
+.services {
+
+    margin-bottom: 4em;
+    
+    .service {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 800px) {
     .services {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         gap: 2em;
     }
 }
