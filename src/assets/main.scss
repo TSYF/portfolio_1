@@ -35,7 +35,7 @@
 
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5;
+        --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -287,6 +287,7 @@ h3 { @extend %h; font-size: var(--fs-h3); }
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
+
         
         &__img {
             grid-area: img;
@@ -299,6 +300,7 @@ h3 { @extend %h; font-size: var(--fs-h3); }
 
     .section {
         &__subtitle--intro {
+                padding-right: 1em;
                 align-self: start;
                 grid-column: -1 / 1;
                 grid-row: 2;
