@@ -22,7 +22,7 @@
     --color-accent: #16e0bd;
     /* Transparent colors */
     --color-light-tr: #fff1;
-    --color-dark-tr: #30303010;
+    --color-dark-tr: #30303040;
     --color-accent-tr: #16e0bd20;
 
     --fs-h1: 3rem;
@@ -169,7 +169,102 @@ h3 { @extend %h; font-size: var(--fs-h3); }
 
 /* Header */
 
-nav { display: none; }
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+    .logo {
+        min-width: 100px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: var(--color-dark-tr);
+    }
+
+    .nav {
+        position: fixed;
+        background-color: var(--color-dark);
+        color: var(--color-light);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 150ms ease-in-out;
+
+
+        &__list {
+            list-style: none;
+            display: flex;
+
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        &__link {
+            @extend %undecoratedAnchor;
+
+            font-weight: var(--fw-bold);
+            font-size: var(--fs-h2);
+
+            &:hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    .nav-toggle {
+        padding: .5em;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        z-index: 101;
+    }
+
+
+    .hamburger {
+        background-color: var(--color-dark);
+
+        height: 3px;
+        width: 2em;
+
+        border-radius: 1em;
+
+        display: block;
+        position: relative;
+
+        transition: transform 250ms ease-in-out;
+
+
+        &::before,
+        &::after {
+            @extend .hamburger;
+
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        &::before { top: 6px; }
+        &::after { bottom: 6px; }
+    }
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
 
 
 /* Intro Section */
