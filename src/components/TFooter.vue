@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="footer">
         <a href="mailto:tomas.y@tutanota.com" class="footer__link"
             >tomas.y@tutanota.com</a
         >
@@ -17,14 +17,15 @@
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
-            <li class="social-list__item">
+            <!-- Youtube not yet created 
+                <li class="social-list__item">
                 <a
-                    href="https://linkedin.com/in/tomas-yanez"
+                    href="#"
                     class="social-list__link"
                 >
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-            </li>
+            </li> -->
         </ul>
     </footer>
 </template>
