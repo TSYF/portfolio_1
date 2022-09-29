@@ -13,6 +13,7 @@
                     header="Vue"
                     bg-color="--color-light-tr"
                     padding="1em"
+                    bd-radius="1em"
                 >
                     <template #img>
                         <img
@@ -29,6 +30,7 @@
                     header="Vue"
                     bg-color="--color-light-tr"
                     padding="1em"
+                    bd-radius="1em"
                 >
                     <template #img>
                         <img
@@ -45,6 +47,7 @@
                     header="Vue"
                     bg-color="--color-light-tr"
                     padding="1em"
+                    bd-radius="1em"
                 >
                     <template #img>
                         <img
@@ -61,6 +64,7 @@
                     header="Vue"
                     bg-color="--color-light-tr"
                     padding="1em"
+                    bd-radius="1em"
                 >
                     <template #img>
                         <img
