@@ -5,7 +5,7 @@
                 Hi, I am <strong>Tomás Yañez</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">
-                software dev
+                SOFTWARE DEV
             </p>
         </header>
         <img
