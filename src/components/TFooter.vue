@@ -5,16 +5,25 @@
         >
         <ul class="social-list">
             <li class="social-list__item">
-                <a href="https://github.com/TSYF" class="social-list__link"
-                    >icon</a
-                >
+                <a href="https://github.com/TSYF" class="social-list__link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </li>
             <li class="social-list__item">
                 <a
                     href="https://linkedin.com/in/tomas-yanez"
                     class="social-list__link"
-                    >icon</a
                 >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a
+                    href="https://linkedin.com/in/tomas-yanez"
+                    class="social-list__link"
+                >
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
             </li>
         </ul>
     </footer>
