@@ -13,5 +13,3 @@ import TServices from "./TServices.vue";
 import TAbout from "./TAbout.vue";
 import TWork from "./TWork.vue";
 </script>
-
-<style lang="scss" scoped></style>

@@ -47,7 +47,3 @@
         <a href="#work" class="btn">My Work</a>
     </section>
 </template>
-
-<script setup></script>
-
-<style lang="scss" scoped></style>
