@@ -16,9 +16,14 @@
     --fw-regular: 300;
     --fw-bold: 900;
 
+    /* Main Colors */
     --color-light: #fff;
     --color-dark: #303030;
     --color-accent: #16e0bd;
+    /* Transparent colors */
+    --color-light-tr: #fff1;
+    --color-dark-tr: #30303010;
+    --color-accent-tr: #16e0bd20;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -68,6 +73,12 @@ strong {
     outline-offset: 2px;
 }
 
+
+/* Effects */
+%accentBackground {
+    background-color: var(--color-accent-tr);
+    transition: background-color 200ms ease-in-out;
+}
 
 /* Buttons */
 
@@ -139,6 +150,12 @@ h3 { @extend %h; font-size: var(--fs-h3); }
             background-color: var(--color-accent);
             font-family: var(--ff-secondary);
             margin-bottom: .7em;
+        }
+
+        &--work {
+            color: var(--color-accent);
+            font-weight: var(--fw-bold);
+            margin-bottom: 2em;
         }
     }
 }
@@ -270,4 +287,31 @@ nav { display: none; }
         }
 
     }
+}
+
+
+/* Work Section */
+.work {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+
+    &__card:hover,
+    &__item:focus {
+        @extend %accentBackground;
+    }
+
+    &__item {
+        color: inherit;
+        text-decoration: none;
+        border-radius: 1em;
+    }
+
+
 }
