@@ -73,6 +73,11 @@ strong {
     outline-offset: 2px;
 }
 
+%undecoratedAnchor {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 /* Effects */
 %accentBackground {
@@ -83,11 +88,12 @@ strong {
 /* Buttons */
 
 .btn {
+    @extend %undecoratedAnchor;
+
     display: inline-block;
     padding: 0.5em 1.5em;
     background-color: var(--color-accent);
     color: var(--color-dark);
-    text-decoration: none;
     cursor: pointer;
     font-size: 0.8em;
     text-transform: uppercase;
@@ -308,10 +314,46 @@ nav { display: none; }
     }
 
     &__item {
-        color: inherit;
-        text-decoration: none;
+        @extend %undecoratedAnchor;
         border-radius: 1em;
     }
 
 
+}
+
+
+/* Footer */
+.footer {
+    background-color: #111;
+
+    padding: 2.5em 0;
+    
+    text-align: center;
+    color: var(--color-accent);
+    font-size: var(--fs-h3);
+
+
+    a { @extend %undecoratedAnchor; }
+
+    .social-list {
+        list-style: none;
+
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 0;
+        padding: 0;
+        gap: .5em;
+
+        &__link {
+            font-weight: var(--fw-bold);
+            padding: .5em;
+        }
+
+        
+        &__link:hover {
+            opacity: .7;
+            text-decoration: underline;
+        }
+        
+    }
 }
