@@ -68,7 +68,9 @@ strong {
     outline-offset: 2px;
 }
 
+
 /* Buttons */
+
 .btn {
     display: inline-block;
     padding: 0.5em 1.5em;
@@ -87,8 +89,8 @@ strong {
     }
 }
 
-/* Typography */
 
+/* Typography */
 
 %h {
     line-height: 1;
@@ -141,8 +143,11 @@ h3 { @extend %h; font-size: var(--fs-h3); }
     }
 }
 
+
 /* Header */
+
 nav { display: none; }
+
 
 /* Intro Section */
 
@@ -188,6 +193,7 @@ nav { display: none; }
 }
 
 /* Services section */
+
 .services-sect {
     background-color: var(--color-dark);
     background-image: url(@img/services-bg.png);
@@ -213,5 +219,55 @@ nav { display: none; }
         margin-left: auto;
         margin-right: auto;
         gap: 2em;
+    }
+}
+
+
+/* About section */
+
+.about {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &__img {
+        box-shadow: var(--bs);
+        z-index: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        column-gap: 2em;
+        overflow-x: hidden;
+
+        .section {
+            &__title--about {
+                grid-area: title;
+            }
+
+            &__subtitle--about {
+                grid-column: 1 / -1;
+                grid-row: 2;
+
+                position: relative;
+                
+                left: -1em;
+                width: calc(100% + 3em);
+                padding-left: 1em;
+                padding-right: calc(300px + 3em);
+            }
+        }
+        
+
+        &__img {
+            grid-area: img;
+        }
+
     }
 }
