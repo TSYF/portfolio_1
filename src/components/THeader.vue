@@ -1,9 +1,13 @@
 <template>
-    <header>
+    <header class="header">
         <div class="logo">
             <span>&lt;dev-tom&gt;</span>
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
+        <button
+            @click="navOpen()"
+            class="nav-toggle"
+            aria-label="toggle navigation"
+        >
             <span class="hamburger"></span>
         </button>
         <TNavbar />
@@ -12,12 +16,6 @@
 
 <script setup>
 import TNavbar from "./TNavbar.vue";
-</script>
 
-<style lang="scss" scoped>
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-style: italic;
-}
-</style>
+const navOpen = () => document.body.classList.toggle("nav-open");
+</script>
