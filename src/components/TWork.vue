@@ -27,7 +27,7 @@
             <a href="#" class="portfolio__item">
                 <TCard
                     class="portfolio__card"
-                    header="Vue"
+                    header="HTML, CSS & JS"
                     bg-color="--color-light-tr"
                     padding="1em"
                     bd-radius="1em"
@@ -35,8 +35,8 @@
                     <template #img>
                         <img
                             class="card__img"
-                            src="@img/vuejs.png"
-                            alt="Vue Framework"
+                            src="@img/html-css-js.png"
+                            alt="HTML, CSS & JavaScript"
                         />
                     </template>
                 </TCard>
@@ -44,7 +44,7 @@
             <a href="#" class="portfolio__item">
                 <TCard
                     class="portfolio__card"
-                    header="Vue"
+                    header="Python"
                     bg-color="--color-light-tr"
                     padding="1em"
                     bd-radius="1em"
@@ -52,8 +52,8 @@
                     <template #img>
                         <img
                             class="card__img"
-                            src="@img/vuejs.png"
-                            alt="Vue Framework"
+                            src="@img/python.png"
+                            alt="Python"
                         />
                     </template>
                 </TCard>
@@ -61,17 +61,13 @@
             <a href="#" class="portfolio__item">
                 <TCard
                     class="portfolio__card"
-                    header="Vue"
+                    header="Java"
                     bg-color="--color-light-tr"
                     padding="1em"
                     bd-radius="1em"
                 >
                     <template #img>
-                        <img
-                            class="card__img"
-                            src="@img/vuejs.png"
-                            alt="Vue Framework"
-                        />
+                        <img class="card__img" src="@img/java.png" alt="Java" />
                     </template>
                 </TCard>
             </a>
