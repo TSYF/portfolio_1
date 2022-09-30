@@ -48,6 +48,7 @@
                     bg-color="--color-light-tr"
                     padding="1em"
                     bd-radius="1em"
+                    gap="1em"
                 >
                     <template #img>
                         <img

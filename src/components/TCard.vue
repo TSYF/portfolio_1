@@ -45,9 +45,14 @@ const props = defineProps({
         required: false,
         type: String,
     },
+    gap: {
+        default: "inherit",
+        required: false,
+        type: String,
+    },
 });
 
-const { bgColor, txtColor, bdRadius, padding } = props;
+const { bgColor, txtColor, bdRadius, padding, gap } = props;
 
 const cssVar = (val) =>
     val.charAt(0) + val.charAt(1) === "--" ? `var(${val})` : val;
@@ -58,6 +63,7 @@ const styleTemplate = ref(
     --txt-color: ${cssVar(txtColor)};
     --bd-radius: ${cssVar(bdRadius)};
     --pd: ${cssVar(padding)};
+    --gap: ${cssVar(gap)};
     `
 );
 </script>
@@ -68,5 +74,11 @@ const styleTemplate = ref(
     color: var(--txt-color);
     border-radius: var(--bd-radius);
     padding: var(--pd);
+}
+</style>
+
+<style>
+div.card > .card__img {
+    margin-bottom: var(--gap);
 }
 </style>
