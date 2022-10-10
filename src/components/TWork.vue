@@ -7,7 +7,13 @@
             </p>
         </header>
         <div class="portfolio">
-            <a href="#" class="portfolio__item">
+            <router-link
+                :to="{
+                    name: 'skill',
+                    params: { slug: slugs.vue },
+                }"
+                class="portfolio__item"
+            >
                 <TCard
                     class="portfolio__card"
                     header="Vue"
@@ -18,13 +24,21 @@
                     <template #img>
                         <img
                             class="card__img"
-                            src="@img/vuejs.png"
+                            :src="getSRC(`${slugs.vue}.png`)"
                             alt="Vue Framework"
                         />
                     </template>
                 </TCard>
-            </a>
-            <a href="#" class="portfolio__item">
+            </router-link>
+            <router-link
+                :to="{
+                    name: 'skill',
+                    params: {
+                        slug: slugs.basicFrontEnd,
+                    },
+                }"
+                class="portfolio__item"
+            >
                 <TCard
                     class="portfolio__card"
                     header="HTML, CSS & JS"
@@ -35,13 +49,19 @@
                     <template #img>
                         <img
                             class="card__img"
-                            src="@img/html-css-js.png"
+                            :src="getSRC(`${slugs.basicFrontEnd}.png`)"
                             alt="HTML, CSS & JavaScript"
                         />
                     </template>
                 </TCard>
-            </a>
-            <a href="#" class="portfolio__item">
+            </router-link>
+            <router-link
+                :to="{
+                    name: 'skill',
+                    params: { slug: slugs.python },
+                }"
+                class="portfolio__item"
+            >
                 <TCard
                     class="portfolio__card"
                     header="Python"
@@ -53,13 +73,19 @@
                     <template #img>
                         <img
                             class="card__img"
-                            src="@img/python.png"
+                            :src="getSRC(`${slugs.python}.png`)"
                             alt="Python"
                         />
                     </template>
                 </TCard>
-            </a>
-            <a href="#" class="portfolio__item">
+            </router-link>
+            <router-link
+                :to="{
+                    name: 'skill',
+                    params: { slug: slugs.java },
+                }"
+                class="portfolio__item"
+            >
                 <TCard
                     class="portfolio__card"
                     header="Java"
@@ -68,14 +94,28 @@
                     bd-radius="1em"
                 >
                     <template #img>
-                        <img class="card__img" src="@img/java.png" alt="Java" />
+                        <img
+                            class="card__img"
+                            :src="getSRC(`${slugs.java}.png`)"
+                            alt="Java"
+                        />
                     </template>
                 </TCard>
-            </a>
+            </router-link>
         </div>
     </section>
 </template>
 
 <script setup>
+import { inject, reactive } from "vue";
 import TCard from "./TCard.vue";
+
+const slugs = reactive({
+    vue: "vue",
+    basicFrontEnd: "html-css-js",
+    python: "python",
+    java: "java",
+});
+
+const getSRC = inject("getSRC");
 </script>
