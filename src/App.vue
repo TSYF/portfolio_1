@@ -1,11 +1,10 @@
 <template>
     <THeader />
-    <TMain />
+    <router-view></router-view>
     <TFooter />
 </template>
 
 <script setup>
 import THeader from "@/components/THeader.vue";
-import TMain from "@/components/TMain.vue";
 import TFooter from "@/components/TFooter.vue";
 </script>
