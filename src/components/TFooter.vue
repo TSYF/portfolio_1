@@ -1,9 +1,9 @@
 <template>
     <footer class="footer">
-        <a href="mailto:tomas.y@tutanota.com" class="footer__link">
+        <a href="mailto:tomas.yanez.f@gmail.com" class="footer__link">
             <i class="fa-solid fa-envelope"></i>
-            tomas.y@tutanota.com</a
-        >
+            tomas.yanez.f@gmail.com
+        </a>
         <ul class="social-list">
             <li class="social-list__item">
                 <a href="https://github.com/TSYF" class="social-list__link">
