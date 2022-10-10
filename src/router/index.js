@@ -8,6 +8,12 @@ const routes = [
         name: "home",
         component: MainView,
     },
+    {
+        path: "/skill/:slug",
+        name: "skill",
+        props: true,
+        component: () => import("@views/SkillView.vue"),
+    },
 ];
 
 const router = createRouter({ history: createWebHistory(), routes });
