@@ -277,6 +277,8 @@ h3 {
 
     &__img {
         box-shadow: var(--bs);
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 80%;
     }
 }
 
