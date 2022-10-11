@@ -412,6 +412,13 @@ h3 {
         @extend %undecoratedAnchor;
         border-radius: 1em;
     }
+
+    &__card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 /* Footer */
