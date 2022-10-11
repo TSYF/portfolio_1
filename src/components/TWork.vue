@@ -28,6 +28,8 @@
                             alt="Vue Framework"
                         />
                     </template>
+
+                    A JavaScript framework for Front-End development.
                 </TCard>
             </router-link>
             <router-link
@@ -53,6 +55,9 @@
                             alt="HTML, CSS & JavaScript"
                         />
                     </template>
+
+                    The three main pillars of the web. Every web front-end
+                    implements them.
                 </TCard>
             </router-link>
             <router-link
@@ -77,6 +82,9 @@
                             alt="Python"
                         />
                     </template>
+
+                    N°1 language for Machine Learning and AI. There's frameworks
+                    and libraries for doing pretty much anything in it.
                 </TCard>
             </router-link>
             <router-link
@@ -100,6 +108,10 @@
                             alt="Java"
                         />
                     </template>
+
+                    One of the most popular languages for software development.
+                    It's wide adoption despite it's steep learning curve serves
+                    as proof of it's reliability.
                 </TCard>
             </router-link>
         </div>
