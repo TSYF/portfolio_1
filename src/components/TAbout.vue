@@ -7,18 +7,18 @@
 
         <div class="about__body">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                libero! Ab repellendus temporibus adipisci explicabo reiciendis,
-                eum recusandae ad voluptatibus! Natus voluptatibus, officia
-                delectus eveniet expedita necessitatibus possimus vel? Hic saepe
-                sint quas? Voluptate, consectetur!
+                I am a very curious person and full of enthusiasm. I always try
+                to improve myself and give the best of me in everything I do, I
+                love working on a team and tend to boost the teams I'm part of
+                with motivation and leadership.
             </p>
 
             <p>
-                Ipsa laudantium autem praesentium quas ratione. Voluptates
-                debitis, enim doloribus ipsum porro optio assumenda labore
-                consectetur eum? Ipsa alias molestiae laudantium omnis minus
-                minima laborum eum.
+                Apart from Computer Science, I like chess, basketball and
+                exercising. Although the thing that motivates me the most and
+                always pushes me past my limits is fatherhood. I have a
+                beautiful daughter for whom I strive to be the best father in
+                the world.
             </p>
         </div>
         <img
