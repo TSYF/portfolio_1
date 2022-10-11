@@ -387,6 +387,10 @@ h3 {
 
         &__img {
             grid-area: img;
+            border-top-left-radius: 1%;
+            border-top-right-radius: 1%;
+            border-bottom-right-radius: 1%;
+            border-bottom-left-radius: 120% 100%;
         }
     }
 }
