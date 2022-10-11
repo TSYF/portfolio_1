@@ -4,7 +4,7 @@
             &lt;dev-tom&gt;
         </router-link>
         <button
-            @click="navOpen()"
+            @click="navToggle()"
             class="nav-toggle"
             aria-label="toggle navigation"
         >
@@ -15,7 +15,11 @@
 </template>
 
 <script setup>
+import { provide } from "vue";
 import TNavbar from "./TNavbar.vue";
 
-const navOpen = () => document.body.classList.toggle("nav-open");
+const navToggle = () => {
+    document.body.classList.toggle("nav-open");
+};
+provide("navToggle", navToggle);
 </script>
