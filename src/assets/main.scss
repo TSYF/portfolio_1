@@ -180,6 +180,8 @@ h3 {
     padding: 1em;
 
     .logo {
+        @extend %undecoratedAnchor;
+
         min-width: 100px;
         font-size: 1.5rem;
         font-weight: bold;
