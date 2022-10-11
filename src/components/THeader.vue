@@ -1,8 +1,8 @@
 <template>
     <header class="header">
-        <div class="logo">
-            <span>&lt;dev-tom&gt;</span>
-        </div>
+        <router-link :to="{ name: 'home' }" class="logo">
+            &lt;dev-tom&gt;
+        </router-link>
         <button
             @click="navOpen()"
             class="nav-toggle"
