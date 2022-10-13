@@ -18,15 +18,15 @@
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
-            <!-- Youtube not yet created 
-                <li class="social-list__item">
+
+            <li class="social-list__item">
                 <a
-                    href="#"
+                    href="https://www.youtube.com/channel/UCaB8Ho8PfpYr-R8Sfa_hL8A"
                     class="social-list__link"
                 >
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-            </li> -->
+            </li>
         </ul>
     </footer>
 </template>
