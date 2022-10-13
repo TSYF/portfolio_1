@@ -6,12 +6,17 @@
         </a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a href="https://github.com/TSYF" class="social-list__link">
+                <a
+                    target="_blank"
+                    href="https://github.com/TSYF"
+                    class="social-list__link"
+                >
                     <i class="fa-brands fa-github"></i>
                 </a>
             </li>
             <li class="social-list__item">
                 <a
+                    target="_blank"
                     href="https://linkedin.com/in/tomas-yanez"
                     class="social-list__link"
                 >
@@ -21,6 +26,7 @@
 
             <li class="social-list__item">
                 <a
+                    target="_blank"
                     href="https://www.youtube.com/channel/UCaB8Ho8PfpYr-R8Sfa_hL8A"
                     class="social-list__link"
                 >
