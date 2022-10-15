@@ -2,6 +2,12 @@ import { defineStore } from "pinia";
 
 export const useGeneralStore = defineStore("general", {
     state: () => ({
+        slugs: {
+            vue: "vue",
+            basicFrontEnd: "html-css-js",
+            python: "python",
+            java: "java",
+        },
         projects: {
             vue: [
                 {

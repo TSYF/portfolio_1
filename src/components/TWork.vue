@@ -119,16 +119,8 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
 import { useGeneralStore } from "@stores/generalStore";
 import TCard from "./TCard.vue";
 
-const slugs = reactive({
-    vue: "vue",
-    basicFrontEnd: "html-css-js",
-    python: "python",
-    java: "java",
-});
-
-const { getSRC } = useGeneralStore();
+const { getSRC, slugs } = useGeneralStore();
 </script>
