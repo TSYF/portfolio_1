@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { inject } from "vue";
+import { useGeneralStore } from "@stores/generalStore";
 
-const navToggle = inject("navToggle");
+const { navToggle } = useGeneralStore();
 </script>

@@ -15,11 +15,8 @@
 </template>
 
 <script setup>
-import { provide } from "vue";
+import { useGeneralStore } from "@stores/generalStore";
 import TNavbar from "./TNavbar.vue";
 
-const navToggle = () => {
-    document.body.classList.toggle("nav-open");
-};
-provide("navToggle", navToggle);
+const { navToggle } = useGeneralStore();
 </script>

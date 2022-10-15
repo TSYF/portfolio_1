@@ -7,9 +7,4 @@
 <script setup>
 import THeader from "@/components/THeader.vue";
 import TFooter from "@/components/TFooter.vue";
-import { provide } from "vue";
-
-provide("getSRC", (name) => {
-    return new URL(`./assets/img/${name}`, import.meta.url);
-});
 </script>
