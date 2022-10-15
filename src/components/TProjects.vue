@@ -26,9 +26,9 @@
 </template>
 
 <script setup>
-import { inject } from "vue";
+import { useGeneralStore } from "@stores/generalStore";
 
-const getSRC = inject("getSRC");
+const { getSRC } = useGeneralStore();
 
 const props = defineProps({
     projects: {

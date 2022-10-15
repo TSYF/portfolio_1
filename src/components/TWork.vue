@@ -119,7 +119,8 @@
 </template>
 
 <script setup>
-import { inject, reactive } from "vue";
+import { reactive } from "vue";
+import { useGeneralStore } from "@stores/generalStore";
 import TCard from "./TCard.vue";
 
 const slugs = reactive({
@@ -129,5 +130,5 @@ const slugs = reactive({
     java: "java",
 });
 
-const getSRC = inject("getSRC");
+const { getSRC } = useGeneralStore();
 </script>
