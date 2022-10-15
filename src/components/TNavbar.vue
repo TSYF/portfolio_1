@@ -24,7 +24,6 @@
 </template>
 
 <script setup>
-import { useGeneralStore } from "@stores/generalStore";
-
+import { useGeneralStore } from "@stores/generalStore.js";
 const { navToggle } = useGeneralStore();
 </script>
