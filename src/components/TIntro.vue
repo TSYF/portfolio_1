@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import { inject } from "vue";
+import { useGeneralStore } from "@stores/generalStore";
 
 const { image } = defineProps({
     image: {
@@ -35,5 +35,5 @@ const { image } = defineProps({
         default: "tomas-dev_1.jpeg",
     },
 });
-const getSRC = inject("getSRC");
+const { getSRC } = useGeneralStore();
 </script>
