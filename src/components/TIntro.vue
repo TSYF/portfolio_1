@@ -12,7 +12,7 @@
         </header>
         <img
             :src="getSRC(image)"
-            :alt="img ? '' : 'a picture of Tomas Yañez smiling'"
+            :alt="image ? '' : 'a picture of Tomas Yañez smiling'"
             class="intro__img"
             :style="[
                 ['png', 'svg'].includes(image.split('.').at(-1))
