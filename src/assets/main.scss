@@ -286,6 +286,10 @@ h3 {
     transform: translateX(0);
 }
 
+.nav-open .hamburger {
+    background-color: var(--color-accent);
+}
+
 /* Intro Section */
 
 .intro {
